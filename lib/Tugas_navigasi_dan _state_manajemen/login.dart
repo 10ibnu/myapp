@@ -16,7 +16,9 @@ class _LoginScreenState extends State<LoginScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ProfileDetail(data: _textController.text),
+        builder:
+            (context) =>
+                ProfileDetail(data: _textController.text, data2: 'Nama : Ibnu'),
       ),
     );
   }

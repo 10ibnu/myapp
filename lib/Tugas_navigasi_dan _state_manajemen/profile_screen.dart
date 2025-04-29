@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class ProfileDetail extends StatelessWidget {
   final String data;
+  final String data2;
 
-  ProfileDetail({required this.data});
+  ProfileDetail({required this.data, required this.data2});
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +17,8 @@ class ProfileDetail extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('Login Sebagai :'),
+              SizedBox(height: 20),
+              Text(data2),
               SizedBox(height: 20),
               Text(data),
               SizedBox(height: 20),
