@@ -1,21 +1,32 @@
 import 'package:flutter/material.dart';
 
-class ProfilDetail extends StatelessWidget {
-  final String email;
+class ProfileDetail extends StatelessWidget {
+  final String data;
 
-  const ProfilDetail({super.key, required this.email});
+  ProfileDetail({required this.data});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text("Profil Pengguna"),
-      ),
-      body: Center(
-        child: Text(
-          'Email yang Anda masukkan: $email',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      appBar: AppBar(title: Text('Halaman Profile')),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('Login Sebagai :'),
+              SizedBox(height: 20),
+              Text(data),
+              SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text('Kembali'),
+              ),
+            ],
+          ),
         ),
       ),
     );
