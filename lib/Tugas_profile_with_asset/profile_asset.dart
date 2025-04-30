@@ -18,7 +18,7 @@ class ProfileDetail extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 const Text(
-                  'IBNU MUH MUKHLIS',
+                  'Ibnu Muh Mukhlis',
                   style: TextStyle(fontSize: 18, fontFamily: 'Raphtalia'),
                 ),
                 const SizedBox(height: 10),
