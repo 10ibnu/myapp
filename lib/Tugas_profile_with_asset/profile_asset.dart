@@ -14,12 +14,22 @@ class ProfileDetail extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 100,
-                  backgroundImage: AssetImage('assets/pp.jpg'),
+                  backgroundImage: AssetImage('assets/img/pp.jpg'),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 30),
                 const Text(
                   'IBNU MUH MUKHLIS',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 18, fontFamily: 'Raphtalia'),
+                ),
+                const SizedBox(height: 10),
+                const Text(
+                  '220102037',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  'TRPL 22A2',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
                 ),
               ],
             ),

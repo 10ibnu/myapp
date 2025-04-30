@@ -88,5 +88,10 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
   assets:
-    - assets/me.jpg
-    - assets/pp.jpg
+    - assets/img/me.jpg
+    - assets/img/pp.jpg
+
+  fonts:
+    - family: Raphtalia
+      fonts:
+        - asset: assets/fonts/Raphtalia Personal Use.ttf
